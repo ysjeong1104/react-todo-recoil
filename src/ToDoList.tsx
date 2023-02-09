@@ -19,8 +19,8 @@ const ToDoList =()=>{
     }
 
     useEffect(()=>{ //localStorage load
-        const storageTodo  = localStorage.getItem("toDos");        
-        setTodos(JSON.parse(storageTodo ? storageTodo : ""));
+        const storageTodo  = localStorage.getItem("toDos");         
+        setTodos( JSON.parse(storageTodo?storageTodo : "[]"));
     },[])
     return (
         <div>
